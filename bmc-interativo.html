@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Business Model Canvas Interativo</title>
+<style>
+:root{
+  --bg:#ffffff; --card:#faf7f5; --text:#1a1a1a; --muted:#6b6b6b;
+  --accent:#e8402b; --accent2:#ff7a3d; --pink:#d6336c;
+  --cost:#ffb98a; --cost2:#ffd8b8; --rev:#f2a0b8; --rev2:#f8c7d6;
+  --border:#e8e2df;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#15120f; --card:#211c18; --text:#f1ece8; --muted:#a79e97; --border:#352e29; }
+}
+:root[data-theme="dark"]{ --bg:#15120f; --card:#211c18; --text:#f1ece8; --muted:#a79e97; --border:#352e29; }
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.45;}
+.wrap{max-width:980px;margin:0 auto;padding:24px 18px 60px;}
+h1{font-size:1.5rem;margin:0 0 4px;color:var(--accent);}
+.sub{color:var(--muted);font-size:.95rem;margin:0 0 18px;}
+h2{font-size:1.15rem;margin:26px 0 10px;}
+.box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;margin:14px 0;}
+ul.benef{margin:8px 0;padding-left:20px;}
+ul.benef li{margin-bottom:6px;}
+.destaque{display:flex;gap:12px;align-items:flex-start;background:linear-gradient(135deg,var(--rev2),var(--cost2));border-radius:12px;padding:14px 16px;margin-top:14px;}
+.destaque .star{font-size:1.4rem;}
+.destaque p{margin:0;font-weight:600;font-size:.95rem;}
+.hint{color:var(--muted);font-size:.88rem;margin:4px 0 14px;}
+.canvas-scroll{overflow-x:auto;padding-bottom:6px;}
+.canvas{display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:auto auto auto;gap:6px;min-width:760px;}
+.blk{border-radius:10px;padding:12px;cursor:pointer;border:2px solid transparent;transition:transform .15s;font-size:.85rem;color:#2a1707;display:flex;flex-direction:column;gap:4px;}
+.blk:hover{transform:translateY(-2px);}
+.blk.active{border-color:#2a1707;}
+.blk b{font-size:.88rem;}
+.blk span.q{font-size:.75rem;opacity:.85;}
+.c1{background:var(--cost);grid-column:1;grid-row:1/3;}
+.c2{background:var(--cost2);grid-column:2;grid-row:1;}
+.c3{background:var(--cost);grid-column:2;grid-row:2;}
+.c4{background:var(--pink);color:#fff;grid-column:3;grid-row:1/3;display:flex;align-items:center;justify-content:center;text-align:center;}
+.c5{background:var(--rev2);grid-column:4;grid-row:1;}
+.c6{background:var(--rev);grid-column:4;grid-row:2;}
+.c7{background:var(--rev2);grid-column:5;grid-row:1/3;}
+.c8{background:var(--cost2);grid-column:1/3;grid-row:3;}
+.c9{background:var(--rev2);grid-column:3/6;grid-row:3;}
+.legend{display:flex;gap:18px;margin:10px 0 4px;font-size:.82rem;color:var(--muted);flex-wrap:wrap;}
+.legend span{display:inline-flex;align-items:center;gap:6px;}
+.dot{width:12px;height:12px;border-radius:3px;display:inline-block;}
+.detail{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;margin-top:16px;min-height:60px;}
+.detail h3{margin:0 0 6px;color:var(--pink);}
+.detail p{margin:0;font-size:.95rem;}
+.detail .ph{color:var(--muted);font-style:italic;}
+footer{text-align:center;color:var(--muted);font-size:.78rem;margin-top:34px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🧩 Business Model Canvas</h1>
+<p class="sub">Entendendo o BMC e sua importância para pequenos negócios</p>
+
+<div class="box">
+  <p>O <strong>Business Model Canvas (BMC)</strong> é uma ferramenta visual que permite estruturar e visualizar o modelo de negócios de uma empresa de forma clara e intuitiva. É amplamente utilizado por pequenos empreendedores para planejar, testar e validar ideias de negócios.</p>
+  <p>Ele facilita a compreensão do modelo de negócios, ajuda na comunicação entre os membros da equipe, permite ajustes rápidos e dinâmicos e favorece a integração dos elementos essenciais do negócio.</p>
+</div>
+
+<h2>Por que ele importa para pequenos negócios</h2>
+<div class="box">
+  <ul class="benef">
+    <li><strong>Planejamento objetivo:</strong> resumo visual do modelo de negócios, facilitando a organização.</li>
+    <li><strong>Decisões estratégicas ágeis:</strong> identificação rápida de ajustes e oportunidades de melhoria.</li>
+    <li><strong>Redução de riscos:</strong> simulação de cenários antes de executar mudanças.</li>
+    <li><strong>Comunicação clara:</strong> facilidade para alinhar estratégias entre sócios e equipes.</li>
+    <li><strong>Adaptação ao mercado:</strong> flexibilidade para revisões e atualizações do modelo de negócio.</li>
+  </ul>
+  <div class="destaque"><span class="star">⭐</span><p>O Business Model Canvas é essencial para pequenos negócios porque permite uma visão clara e objetiva da estrutura e do funcionamento da empresa.</p></div>
+</div>
+
+<h2>Explore o Canvas</h2>
+<p class="hint">Clique em cada bloco para ver o que ele representa.</p>
+<div class="legend">
+  <span><i class="dot" style="background:var(--cost)"></i>Estrutura de Custos</span>
+  <span><i class="dot" style="background:var(--rev)"></i>Fontes de Receita</span>
+  <span><i class="dot" style="background:var(--pink)"></i>Núcleo do negócio</span>
+</div>
+
+<div class="canvas-scroll">
+<div class="canvas" id="canvas">
+  <div class="blk c1" data-k="kp"><b>Parcerias-Chave</b><span class="q">Quem são os parceiros estratégicos?</span></div>
+  <div class="blk c2" data-k="ka"><b>Atividades-Chave</b><span class="q">O que é essencial fazer?</span></div>
+  <div class="blk c3" data-k="kr"><b>Recursos-Chave</b><span class="q">O que é essencial ter?</span></div>
+  <div class="blk c4" data-k="vp"><b>Proposta de Valor</b><span class="q">Qual problema resolvemos?</span></div>
+  <div class="blk c5" data-k="cr"><b>Relacionamento c/ Clientes</b><span class="q">Como interagimos?</span></div>
+  <div class="blk c6" data-k="ch"><b>Canais</b><span class="q">Como o produto chega ao cliente?</span></div>
+  <div class="blk c7" data-k="cs"><b>Segmento de Clientes</b><span class="q">Quem são os clientes?</span></div>
+  <div class="blk c8" data-k="cost"><b>Estrutura de Custos</b><span class="q">Quais são os principais gastos?</span></div>
+  <div class="blk c9" data-k="rev"><b>Fontes de Receita</b><span class="q">Como a empresa ganha dinheiro?</span></div>
+</div>
+</div>
+
+<div class="detail" id="detail"><p class="ph">Clique em um bloco acima para ver a explicação aqui.</p></div>
+
+<footer>Baseado no material "Business Model Canvas para pequenos negócios" · SEDUC-SP</footer>
+</div>
+
+<script>
+const data = {
+  kp: ["Parcerias-Chave","Quem são os parceiros estratégicos do negócio? São fornecedores, alianças e colaboradores externos que ajudam a empresa a operar, reduzir riscos e crescer."],
+  ka: ["Atividades-Chave","Quais são as atividades essenciais para a proposta de valor? São as ações mais importantes que a empresa precisa executar para o modelo de negócio funcionar."],
+  kr: ["Recursos-Chave","Quais são os principais recursos para o funcionamento do negócio? Podem ser físicos, financeiros, humanos ou intelectuais — essenciais para entregar a proposta de valor."],
+  vp: ["Proposta de Valor","Qual problema dos clientes o negócio resolve? É o diferencial que leva o cliente a escolher essa empresa em vez de outra, combinando solução para um problema, benefícios percebidos e diferenciação da concorrência."],
+  cr: ["Relacionamento com Clientes","Como a empresa interage com seus clientes? Define o tipo de relação mantida, do atendimento pessoal e próximo ao autoatendimento digital."],
+  ch: ["Canais","Como o produto ou serviço chega até o cliente? Reúne os meios de comunicação, distribuição e venda usados pela empresa para alcançar seu público."],
+  cs: ["Segmento de Clientes","Quem são os clientes do negócio? Define os grupos de pessoas ou organizações que a empresa busca atender — por faixa etária, localização, preferências, entre outros critérios."],
+  cost: ["Estrutura de Custos","Quais são os custos operacionais mais importantes? Reúne todos os gastos necessários para manter o negócio funcionando e para viabilizar a entrega da proposta de valor."],
+  rev: ["Fontes de Receita","Como a empresa ganha dinheiro? Reúne as formas de monetização geradas a partir do valor entregue aos clientes — vendas, assinaturas, comissões, entre outras."]
+};
+const detail = document.getElementById('detail');
+document.querySelectorAll('.blk').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.blk').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    const [title,text] = data[b.dataset.k];
+    detail.innerHTML = '<h3>'+title+'</h3><p>'+text+'</p>';
+  });
+});
+</script>
+</body>
+</html>
